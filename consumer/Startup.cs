@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Nancy.Owin;
 
-namespace NancyApplication
+namespace Consumer
 {
    public class Startup
     {
