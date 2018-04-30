@@ -1,0 +1,8 @@
+version: '2.3'
+services:
+  consumer:
+    build:
+      context: .
+      target: builder
+    volumes:
+    - .:/app
