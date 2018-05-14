@@ -2,8 +2,33 @@ version: 2
 jobs:
   build:
     docker:
-      - image: docker/compose
+      - image: debian:stretch
     steps:
+
+      ###  Prerequisites for Docker and Docker Compose
+      - run:
+          name: Install Curl
+          command: |
+            apt-get update
+            apt-get install -y curl
+      - run:
+          name: Install Docker
+          command: |
+            apt-get update
+            apt-get install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common
+            curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
+            add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+            apt-get update
+            apt-get install -y docker-ce
+      - run:
+          name: Install Docker Compose
+          command: |
+            curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` > ~/docker-compose
+            chmod +x ~/docker-compose
+            mv ~/docker-compose /usr/local/bin/docker-compose
+      - setup_remote_docker
+      
+      ### Code build and test
       - checkout
       - run:
           name: Build & run tests
