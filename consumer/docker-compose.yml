@@ -1,8 +1,23 @@
-version: '2.3'
+version: "3.4"
 services:
-  consumer:
+  builder:
     build:
       context: .
       target: builder
     volumes:
-    - .:/app
+      - .:/app
+
+  test:
+    build:
+      context: .
+      target: test
+    command: dotnet test
+
+  web:
+    build:
+      context: .
+      target: web
+    ports:
+      - 8080:80
+    command: dotnet /app/consumer.dll
+

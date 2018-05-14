@@ -1,19 +1,14 @@
-# Pact Demo
+# .NET Core 2.1 / Docker / Nancy
+## Lightweight Microservice Starter
 
-A small demonstration of using Pact with .NET Core, Nancy and Docker.
+An easy way to get started with .NET Core and Nancy running in Docker. 
 
-## Architecture
+### Project objectives
 
-The demo contains 3 different services:
-
-1. Consumer
-2. Provider
-3. Pact Broker
-
-## Instructions
-
-To run a full integration test that includes all components, run:
-
-		$ docker-compose run test
+1. An easy starting point for a backend API microservice
+1. Cross platform (Mac OS, Linux and Windows)
+1. To be as lightweight as possible
+1. Builds and tests should run from the command line
+1. No IDE (Visual Studio) required
 
 
