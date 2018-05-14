@@ -19,5 +19,5 @@ services:
       target: web
     ports:
       - 8080:80
-    command: dotnet /app/consumer.dll
+    command: dotnet /app/gravytrain.dll
 

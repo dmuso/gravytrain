@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Nancy.Owin;
 
-namespace Consumer
+namespace Gravytrain
 {
    public class Startup
     {

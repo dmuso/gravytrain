@@ -29,4 +29,4 @@ RUN dotnet publish -c Release -o out
 
 FROM microsoft/dotnet:2.1-runtime AS web
 COPY --from=publish /app/src/out /app
-# ENTRYPOINT ["dotnet", "/app/consumer.dll"]
+# ENTRYPOINT ["dotnet", "/app/gravytrain.dll"]

@@ -2,7 +2,7 @@ using System.IO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Consumer
+namespace Gravytrain
 {
   public class Program
   {

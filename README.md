@@ -1,7 +1,6 @@
-# .NET Core 2.1 / Docker / Nancy
-## Lightweight Microservice Starter
+# Gravy Train
 
-An easy way to get started with .NET Core and Nancy running in Docker. 
+An easy way to get a lightweight API microservice started with .NET Core and Nancy running in Docker.
 
 ### Project objectives
 

@@ -3,9 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <DebugType>portable</DebugType>
-    <AssemblyName>consumer</AssemblyName>
+    <AssemblyName>gravytrain</AssemblyName>
 		<OutputType>Exe</OutputType>
-		<StartupObject>Consumer.Program</StartupObject>
+		<StartupObject>Gravytrain.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

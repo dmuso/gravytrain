@@ -1,6 +1,6 @@
 using Nancy;
 
-namespace Consumer
+namespace Gravytrain
 {
     public class HomeModule : NancyModule
     {

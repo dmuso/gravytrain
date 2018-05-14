@@ -1,14 +1,14 @@
 using Xunit;
-using Consumer;
+using Gravytrain;
 
-namespace ConsumerTest
+namespace GravytrainTest
 {
     public class HomeModuleTest
     {
         [Fact]
         public void PassingTest()
         {
-            Consumer.HomeModule home = new Consumer.HomeModule();
+            Gravytrain.HomeModule home = new Gravytrain.HomeModule();
             Assert.Equal(4, Add(2, 2));
         }
 
