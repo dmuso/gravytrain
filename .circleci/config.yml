@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: docker/compose
+    steps:
+      - checkout
+      - run:
+          name: Build & run tests
+          command: docker-compose run test

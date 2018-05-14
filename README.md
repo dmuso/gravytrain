@@ -1,3 +1,5 @@
+[![Build Status](https://circleci.com/gh/dmuso/gravytrain.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/dmuso/gravytrain)
+
 # Gravy Train
 
 An easy way to get a lightweight API microservice started with .NET Core and Nancy running in Docker.
